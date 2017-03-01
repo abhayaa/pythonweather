@@ -36,7 +36,7 @@ def temperature():
         if condition == "rain":
             iconCondition = "shower3.png"
         if condition == "thunderstorm":
-            iconConditio = "tstorm2.png"
+            iconCondition = "tstorm2.png"
         if condition == "snow":
             iconCondition = "snow3.png"
         if condition == "mist":
