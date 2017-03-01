@@ -6,4 +6,4 @@ Python based code uses an API request to pull data based on Zip Code or City nam
 Data from: http://openweathermap.org/
 
 
-![alt tag](http://imgur.com/a/yqLVA")
+![alt tag](http://imgur.com/a/yqLVA)
