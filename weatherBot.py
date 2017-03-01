@@ -29,17 +29,17 @@ def temperature():
 
         if condition == "clear":
             iconCondition = "cloudy1.png"
-        if condition == "few clouds":
+        elif condition == "few clouds":
             iconCondition = "cloudy3.png"
-        if condition == "shower rain":
+        elif condition == "shower rain":
             iconCondition = "shower3.png"
-        if condition == "rain":
+        elif condition == "rain":
             iconCondition = "shower3.png"
-        if condition == "thunderstorm":
+        elif condition == "thunderstorm":
             iconCondition = "tstorm2.png"
-        if condition == "snow":
+        elif condition == "snow":
             iconCondition = "snow3.png"
-        if condition == "mist":
+        elif condition == "mist":
             iconCondition = "mist.png"
         kelvin = float(json_object['main']['temp'])
         fahrenheit = round((kelvin - 273.15) * 1.8 + 32)
@@ -56,17 +56,17 @@ def temperature():
 
         if condition == "clear":
             iconCondition = "cloudy1.png"
-        if condition == "few clouds":
+        elif condition == "few clouds":
             iconCondition = "cloudy3.png"
-        if condition == "shower rain":
+        elif condition == "shower rain":
             iconCondition = "shower3.png"
-        if condition == "rain":
+        elif condition == "rain":
             iconCondition = "shower3.png"
-        if condition == "thunderstorm":
+        elif condition == "thunderstorm":
             iconCondition = "tstorm2.png"
-        if condition == "snow":
+        elif condition == "snow":
             iconCondition = "snow3.png"
-        if condition == "mist":
+        elif condition == "mist":
             iconCondition = "mist.png"
 
         kelvin = float(json_object['main']['temp'])
