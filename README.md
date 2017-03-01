@@ -6,9 +6,12 @@ Not being able to identify all of the different condition that may be returned, 
 
 Screenshots taken on Tuesday February 28, 2017, ~9pm CST.
 
-I do not own the images displayed in the screenshots.  
+I do not own the images displayed in the screenshots.
+
 Index Page Background: http://wallpapercave.com/w/5P6R12c
+
 Weather Page Background: http://more-sky.com/group/minimalistic-backgrounds/
+
 Icon Images: http://www.123freeicons.com/tick-weather-icons/#.WLY6oBIrKRs
 
 
