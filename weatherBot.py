@@ -5,18 +5,31 @@ from flask import request
 from datetime import datetime
 import requests
 
-"""/Users/abhayabasnet/Desktop/Python/weatherBot.py"""
+
 
 app = Flask(__name__)
 
 @app.route('/temperature', methods=['POST'])
 def temperature():
     userInput = request.form['zip']
+'''
+Initializes the conditions to use in the following code
+'''
 
     condition = 1
     fahrenheit = 1
     city = 1
     iconCondition = " "
+'''
+Detects if the user input is a Zipcode or a City and does the following processes:
+    Gets the response from the openweathermap API, and converts the JSON data into the specifics:
+        *city
+        *weather condition - takes the result returned from this returns the appropriate image
+        *temperature - takes the kelvin temperature that is returned and converts to fahrenheit
+        *assigns each returned value to a value to return in the HTML page.
+    Once all the necessary data is collected, it is sent to the appropriate place for display within the html
+'''
+
 
     if userInput.isdigit() == True:
         response= requests.get('http://api.openweathermap.org/data/2.5/weather?zip='+userInput+',us&appid=fe22db5569ab3626316cda1a75a095a8')
@@ -74,13 +87,13 @@ def temperature():
         fahrenheit = round((kelvin - 273.15) * 1.8 + 32)
 
     return render_template('temperature.html', temp=fahrenheit,city=city,cond=condition,icon=iconCondition)
-
+'''
+routes the page to the index page where the location is collected
+'''
 @app.route('/')
-def index():
-    now = datetime.now()
-    date = now.strftime('%m/%d/%Y')
 
-    return render_template('index.html', date=date)
+
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
